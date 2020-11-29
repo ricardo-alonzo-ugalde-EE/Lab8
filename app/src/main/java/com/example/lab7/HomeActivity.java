@@ -397,4 +397,10 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .target(latLng).zoom(12).build();
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
+
+    public void openNewActivity(View view)
+    {
+        Intent intent = new Intent(this, ChatWindow.class);
+        startActivity(intent);
+    }
 }
