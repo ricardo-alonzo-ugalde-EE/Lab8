@@ -400,7 +400,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void openNewActivity(View view)
     {
-        Intent intent = new Intent(this, ChatWindow.class);
+        Intent intent = new Intent(this, PostMessage.class);
         startActivity(intent);
     }
 }
